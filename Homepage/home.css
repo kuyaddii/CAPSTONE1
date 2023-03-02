@@ -4,87 +4,8 @@
     text-decoration: none;
     font-family: Roboto, sans-serif;
 }
-.background{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Background.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    border-bottom: 5px solid #008000;
-    border-bottom-right-radius: 350px;
-    border-bottom-left-radius: 350px;
-    text-align: right;
-}
 
-.background .tabmenu ul li{
-    cursor: pointer;
-    list-style: none;
-    padding-left: 40px;
-    display: inline-block;
-    color: #fff;
-    opacity: 0;
-    padding-top: 10px;
-    transition: 1s;
-
-}
-
-.background .tabmenu ul li::after{
-    content: '';
-    border-bottom: 5px solid #ffff33;
-    width: 100%;
-    opacity: 0;
-    transition: 1s;
-}
-
-.background .tabmenu:hover ul li{
-    opacity: 100%;
-}
-
-.background .tabmenu:hover ul li::after{
-    opacity: 1;
-    top: 5px;
-}
-
-/*firstpage*/
-
-.firstpage{
-    margin: 30px;
-}
-
-.firstpage h1{
-    text-align: center;
-    padding-top: 40px;
-    font-size: 60px;
-    font-weight: 1000;
-    color: yellow;
-    text-shadow: 3px 3px darkgoldenrod;
-}
-
-.firstpage p{
-    margin: 20px;
-    text-align: justify;
-    color: #fff;
-    font-size: 18px;
-}
-
-/*2nd page*/
-
-.secondpage{
-    margin: 20px;
-    text-align: center;
-}
-
-
-.secondpage img{
-    border: 5px solid green; 
-    border-radius: 5px;   
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-
+/* Header */
 
 .header{
     background-color:#008000;
@@ -120,6 +41,133 @@
     margin-top: -85px;
     justify-content: space-between;
 }
+
+/*backgroud section */
+
+.background{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 5px solid #008000;
+    text-align: right;
+}
+
+.background .tabmenu ul li{
+    cursor: pointer;
+    list-style: none;
+    padding-left: 40px;
+    display: inline-block;
+    color: #fff;
+    opacity: 0;
+    padding-top: 10px;
+    transition: 1s;
+
+}
+
+/* animation for tabmenu*/
+
+.background .tabmenu ul li::after{
+    content: '';
+    border-bottom: 5px solid #ffff33;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.background .tabmenu:hover ul li{
+    opacity: 100%;
+}
+
+.background .tabmenu:hover ul li::after{
+    opacity: 1;
+    top: 5px;
+}
+
+/*firstpage*/
+
+.firstpage{
+    margin: 30px;
+}
+
+.firstpage h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 60px;
+    font-weight: 1000;
+    color: #ffff00;
+    text-shadow: 3px 3px darkgoldenrod;
+}
+
+.firstpage p{
+    margin: 20px;
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*2nd page news and updates section*/
+
+.gallery {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gallery h1{
+    
+      font-size: 40px;
+      font-weight: 700;
+      padding: 10px;
+      color: #ffff00;
+      text-shadow: 2px 2px #4d4d4d;   
+}
+
+.gallery p{
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 5px;
+    padding-bottom: 20px;
+}
+
+.secondpage{
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    flex-basis: 31.3%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    transition: 0.5s; 
+}
+
+.news img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+/*hover effects for images in news page*/
+
+.news:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+
+    }
+}
+
+
 
 /*footer*/
 
