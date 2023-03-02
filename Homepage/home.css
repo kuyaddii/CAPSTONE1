@@ -1,31 +1,90 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     font-family: Roboto, sans-serif;
 }
 .background{
-
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Background.png);
     background-position: center;
     background-size: cover;
     position: relative;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.background .menu {
-    flex: 1;
+    border-bottom: 5px solid #008000;
+    border-bottom-right-radius: 350px;
+    border-bottom-left-radius: 350px;
     text-align: right;
 }
 
-.background .menu ul{
-    display: inline-block;
-    position: relative;
-    padding: 8px 12px;
+.background .tabmenu ul li{
+    cursor: pointer;
     list-style: none;
+    padding-left: 40px;
+    display: inline-block;
+    color: #fff;
+    opacity: 0;
+    padding-top: 10px;
+    transition: 1s;
+
 }
+
+.background .tabmenu ul li::after{
+    content: '';
+    border-bottom: 5px solid #ffff33;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.background .tabmenu:hover ul li{
+    opacity: 100%;
+}
+
+.background .tabmenu:hover ul li::after{
+    opacity: 1;
+    top: 5px;
+}
+
+/*firstpage*/
+
+.firstpage{
+    margin: 30px;
+}
+
+.firstpage h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 60px;
+    font-weight: 1000;
+    color: yellow;
+    text-shadow: 3px 3px darkgoldenrod;
+}
+
+.firstpage p{
+    margin: 20px;
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*2nd page*/
+
+.secondpage{
+    margin: 20px;
+    text-align: center;
+}
+
+
+.secondpage img{
+    border: 5px solid green; 
+    border-radius: 5px;   
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
 
 .header{
     background-color:#008000;
@@ -60,4 +119,27 @@
     float: right;
     margin-top: -85px;
     justify-content: space-between;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #4d4d4d;
+    border-top: 5px solid #ffff1a;
+}
+
+.footer p{
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+}
+
+.icons .fab{
+    color: blue;
+    cursor: pointer;
+    margin-left: 10px;
 }
