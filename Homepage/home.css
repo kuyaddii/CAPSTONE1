@@ -102,35 +102,40 @@
 }
 
 .firstpage p{
-    margin: 20px;
+    padding: 10px;
+    margin: 30px;
     text-align: justify;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /*2nd page news and updates section*/
 
 .gallery {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    border-bottom: 5px solid #008000;
 }
 
 .gallery h1{
     
-      font-size: 40px;
-      font-weight: 700;
-      padding: 10px;
-      color: #ffff00;
-      text-shadow: 2px 2px #4d4d4d;   
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffff00;
+    text-shadow: 2px 2px #4d4d4d;   
 }
 
 .gallery p{
+    width: 85%;
+    margin: auto;
     font-size: 18px;
+    font-weight: 550;
     text-align: justify;
     text-indent: 5px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px
 }
 
 .secondpage{
@@ -144,9 +149,11 @@
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 12px 12px;
+    padding: 15px 15px 20px 20px;
     box-sizing: border-box;
     transition: 0.5s; 
+    margin: auto;
+    
 }
 
 .news img{
@@ -171,28 +178,42 @@
 /*About section*/
 
 .about{
-    padding: 20px;
+    width: 99.5%;
     margin: auto;
     text-align: center;
-    width: 80%;
+    border-bottom: 5px solid #008000;
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/Homepage/bgb2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .about h1{
+    padding-top: 30px;
     font-size: 40px;
-    font-weight: 900;
-    padding: 10px;
-    color: #2f2f1e;
+    font-weight: 1000;
+    color: black;
     text-shadow: 2px 2px #ff9900;
+}
+.about li{
+    margin: 5%;
+    font-size: 20px;
+    font-weight: 900px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    text-align: justify;
 }
 
 .description{
-    margin: 4%;
+    margin: 5%;
     display: flex;
     justify-content: space-between;
 }
 
 .tab{
-    flex-basis: 45%;
+    margin: auto;
+    flex-basis: 46%;
     background: #fff3f3;
     padding: 5px;
     border-radius: 10px;
@@ -202,15 +223,18 @@
 
 .tab h2{
     font-size: 40px;
-    padding: 10px;
-    color: #2d2d1f;
+    padding: 5px;
+    color: black;
     text-shadow: 2px 2px #ff9900;
+    font-weight: 800;
 }
 
 .tab p{
     font-size: 18px;
     text-align: justify;
     text-indent: 10px;
+    font-weight: 600
+    ;
     margin: 10px;
 }
 /*footer*/
