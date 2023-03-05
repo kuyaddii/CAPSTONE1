@@ -51,7 +51,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    border-bottom: 5px solid #008000;
+    border-bottom: 5px solid #008000;   
     text-align: right;
 }
 
@@ -168,7 +168,51 @@
 }
 
 
+/*About section*/
 
+.about{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.about h1{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+    color: #2f2f1e;
+    text-shadow: 2px 2px #ff9900;
+}
+
+.description{
+    margin: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab{
+    flex-basis: 45%;
+    background: #fff3f3;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.tab h2{
+    font-size: 40px;
+    padding: 10px;
+    color: #2d2d1f;
+    text-shadow: 2px 2px #ff9900;
+}
+
+.tab p{
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 10px;
+    margin: 10px;
+}
 /*footer*/
 
 .footer{
