@@ -102,11 +102,11 @@
 }
 
 .firstpage p{
-    padding: 10px;
+    padding: 40px;
     margin: 30px;
     text-align: justify;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*2nd page news and updates section*/
@@ -237,6 +237,116 @@
     ;
     margin: 10px;
 }
+
+/* Organizational Chart */
+
+.orgchart{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.orgchart h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 2px 2px #ffff00;
+}
+
+.pics{
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 50pxs;
+}
+
+.avatars{
+    display: inline-block;
+    margin: 5%;
+    border: 2px solid #008000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Contact Us */
+
+.contactus{
+    text-align: center;
+    border-top: 5px solid #008000;
+}
+
+.contactus h1{
+    padding-top: 20px;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 2px 2px #ffff00;
+}
+
+.contactus p{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: justify;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.contactinfo{
+    padding: 10px;
+    display: flex;
+}
+
+.list {
+    flex-basis: 55%;
+    margin: 4%;
+    border: 5px solid #008000;
+    border-radius: 5px;
+    justify-content: center;
+    background: #fff3f3;
+    text-align: center;
+}
+
+
+.list2{
+    cursor: pointer;
+    flex-basis: 38%;
+    margin: 4%;
+    border: 5px solid #008000;
+    border-radius: 5px;
+    justify-content: center;
+    background: #fff3f3 ;
+    
+}
+
+
+.list:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.918);
+    transition: 0.5s;
+}
+
+@media(max-width: 700px)
+    {
+        .row{
+            flex-direction: column;
+        }
+    }
+
+
+.list2:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.918);
+    transition: 0.5s;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+
+    }
+}
+
+
 /*footer*/
 
 .footer{
