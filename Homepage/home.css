@@ -213,9 +213,19 @@
 
 .tab{
     margin: auto;
-    flex-basis: 46%;
+    flex-basis: 35%;
     background: #fff3f3;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.tab2{
+    margin: auto;
+    flex-basis: 35%;
+    background: #fff3f3;
+    padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     transition: 1s;
@@ -223,19 +233,36 @@
 
 .tab h2{
     font-size: 40px;
-    padding: 5px;
+    padding: 10px;
+    color: black;
+    text-shadow: 2px 2px #ff9900;
+    font-weight: 800;
+}
+
+.tab2 h2{
+    font-size: 40px;
+    padding: 10px;
     color: black;
     text-shadow: 2px 2px #ff9900;
     font-weight: 800;
 }
 
 .tab p{
+    padding: 10px;
     font-size: 18px;
     text-align: justify;
     text-indent: 10px;
-    font-weight: 600
-    ;
-    margin: 10px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.tab2 p{
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 10px;
+    font-weight: 600;
+    margin: 20px;
 }
 
 /* Organizational Chart */
